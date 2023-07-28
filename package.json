@@ -1,0 +1,9 @@
+{
+  "name": "@matheusrocha89/x",
+  "version": "0.1.0",
+  "main": "index.js",
+  "bin": {
+    "x": "index.js"
+  },
+  "license": "MIT"
+}
