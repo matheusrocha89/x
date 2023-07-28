@@ -14,12 +14,13 @@ function readPackageManagerFromFile() {
 
 function detectPackageManager() {
   const packageManagerFromFile = readPackageManagerFromFile();
-  if (packageManagerFromFile === "yarn") {
-    return "yarn";
-  } else if (packageManagerFromFile === "pnpm") {
-    return "pnpm";
-  } else if (packageManagerFromFile === "npm") {
-    return "npm";
+  switch (packageManagerFromFile) {
+    case "yarn":
+      return "yarn";
+    case "pnpm":
+      return "pnpm";
+    case "npm":
+      return "npm";
   }
 
   // If package manager is not specified in the file, fall back to lock file detection
