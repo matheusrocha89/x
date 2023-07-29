@@ -10,7 +10,7 @@
     "x": "index.js"
   },
   "scripts": {
-    "release": "changesets publish"
+    "release": "changeset publish"
   },
   "license": "MIT",
   "dependencies": {
