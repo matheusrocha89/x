@@ -9,5 +9,11 @@
   "bin": {
     "x": "index.js"
   },
-  "license": "MIT"
+  "scripts": {
+    "release": "changesets publish"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@changesets/cli": "^2.26.2"
+  }
 }
